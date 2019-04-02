@@ -1,17 +1,17 @@
 # include <stdio.h>
 int main (void){
-	char nota[3];
+	char nota[50];
 	int cont=0,i;
 	float media=0,soma=0;
 
-	for(i=0;i<3;i++){
+	for(i=0;i<50;i++){
 		printf("Entre com a nota:\n");
 		scanf("%hhd",&nota[i]);
 		soma+=nota[i];	
 	}
-	media=(soma/3);
+	media=(soma/50);
 	printf("A media é:%f\n",media);
-	for(i=0;i<3;i++){
+	for(i=0;i<50;i++){
 		if(nota[i]>media){
 			cont+=1;
 		}
